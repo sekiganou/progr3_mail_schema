@@ -1,0 +1,64 @@
+{
+    "type": "array",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "minItems": 0,
+    "uniqueItems": true,
+    "items": {
+        "type": "object",
+        "required": [
+            "GUID",
+            "SenderUserGUID",
+            "ReceiverUserGUID",
+            "ForwarderUserGUID",
+            "Title",
+            "Body",
+            "Date",
+            "ReplyToMessageGUID"
+        ],
+        "properties": {
+            "GUID": {
+                "type": "string",
+                "minLength": 1
+            },
+            "SenderUserGUID": {
+                "type": "string",
+                "minLength": 1
+            },
+            "ForwarderUserGUID": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "minLength": 1
+            },
+            "ReceiverUserGUID": {
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "minItems": 1
+            },
+            "Title": {
+                "type": "string",
+                "minLength": 1
+            },
+            "Body": {
+                "type": "string",
+                "minLength": 1
+            },
+            "Date": {
+                "type": "string",
+                "format": "date-time"
+            },
+            "ReplyToMessageGUID": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "minLength": 1
+            }
+        }
+    }
+}
