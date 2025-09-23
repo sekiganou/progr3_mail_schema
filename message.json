@@ -10,7 +10,7 @@
       "GUID",
       "SenderUserGUID",
       "RecipientsUserGUIDs",
-      "ForwarderUserGUID",
+      "IsForwarded",
       "Subject",
       "Body",
       "Date",
@@ -25,9 +25,10 @@
         "type": "string",
         "minLength": 1
       },
-      "ForwarderUserGUID": {
-        "type": ["string", "null"],
-        "minLength": 1
+      "IsForwarded": {
+        "type": ["string"],
+        "minLength": 1,
+        "enum": ["NO", "YES"]
       },
       "RecipientsUserGUIDs": {
         "type": "array",
