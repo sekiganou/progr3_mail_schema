@@ -1,0 +1,35 @@
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": ["LogLevel", "Message", "Timestamp", "RequestId", "Details"],
+    "properties": {
+      "LogLevel": {
+        "type": "string",
+        "minLength": 1,
+        "enum": ["DEBUG", "INFO", "WARN", "ERROR"]
+      },
+      "Message": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Timestamp": {
+        "type": "string",
+        "format": "date-time",
+        "minLength": 1
+      },
+      "RequestId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Details": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  }
+}
