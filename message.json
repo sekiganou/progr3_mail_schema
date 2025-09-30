@@ -30,7 +30,7 @@
         "minLength": 1,
         "enum": ["NO", "YES"]
       },
-      "RecipientsUserGUIDs": {
+      "RecipientsUserEmails": {
         "type": "array",
         "items": {
           "type": "string",
