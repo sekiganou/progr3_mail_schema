@@ -27,8 +27,7 @@
         "minLength": 1
       },
       "Details": {
-        "type": "object",
-        "properties": {}
+        "type": "string"
       }
     }
   }
