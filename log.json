@@ -6,7 +6,7 @@
   "uniqueItems": true,
   "items": {
     "type": "object",
-    "required": ["LogLevel", "Message", "Timestamp", "RequestId", "Details"],
+    "required": ["LogLevel", "Message", "Timestamp", "RequestId"],
     "properties": {
       "LogLevel": {
         "type": "string",
@@ -25,9 +25,6 @@
       "RequestId": {
         "type": "string",
         "minLength": 1
-      },
-      "Details": {
-        "type": "string"
       }
     }
   }
