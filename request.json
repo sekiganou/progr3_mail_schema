@@ -14,6 +14,7 @@
         "REPLY_ALL_MESSAGE",
         "FORWARD_MESSAGE",
         "GET_MESSAGES",
+        "GET_MESSAGES_WITH_FILTERS",
         "GET_MESSAGE_DETAILS",
         "DELETE_MESSAGE"
       ]
@@ -22,8 +23,5 @@
       "type": "string"
     }
   },
-  "required": [
-    "command",
-    "body"
-  ]
+  "required": ["command", "body"]
 }
