@@ -14,8 +14,7 @@
       "Subject",
       "Body",
       "Date",
-      "ReplyToMessageGUID",
-      "IsRead"
+      "ReplyToMessageGUID"
     ],
     "properties": {
       "GUID": {
@@ -54,11 +53,6 @@
       "ReplyToMessageGUID": {
         "type": ["string", "null"],
         "minLength": 1
-      },
-      "IsRead": {
-        "type": ["string"],
-        "minLength": 1,
-        "enum": ["NO", "YES"]
       }
     }
   }
