@@ -7,7 +7,7 @@
       "type": "string",
       "enum": [
         "LOGIN",
-        "LOGOUT",
+        "GET_USERS",
         "GET_USER_DETAILS",
         "SEND_MESSAGE",
         "REPLY_SINGLE_MESSAGE",
@@ -15,7 +15,6 @@
         "FORWARD_MESSAGE",
         "GET_MESSAGES",
         "GET_MESSAGES_WITH_FILTERS",
-        "GET_MESSAGE_DETAILS",
         "DELETE_MESSAGE"
       ]
     },
