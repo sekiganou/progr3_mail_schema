@@ -9,11 +9,7 @@
         "HEALTH",
         "LOGIN",
         "GET_USERS",
-        "GET_USER_DETAILS",
         "SEND_MESSAGE",
-        "REPLY_SINGLE_MESSAGE",
-        "REPLY_ALL_MESSAGE",
-        "FORWARD_MESSAGE",
         "GET_MESSAGES",
         "GET_MESSAGES_WITH_FILTERS",
         "DELETE_MESSAGE"
