@@ -10,7 +10,7 @@
       "GUID",
       "SenderUserGUID",
       "RecipientsUserGUIDs",
-      "IsForwarded",
+      "DeletedRecipientsUserGUIDs",
       "Subject",
       "Body",
       "Date",
@@ -25,11 +25,6 @@
         "type": "string",
         "minLength": 1
       },
-      "IsForwarded": {
-        "type": ["string"],
-        "minLength": 1,
-        "enum": ["NO", "YES"]
-      },
       "RecipientsUserGUIDs": {
         "type": "array",
         "items": {
@@ -37,6 +32,14 @@
           "minLength": 1
         },
         "minItems": 1
+      },
+      "DeletedRecipientsUserGUIDs": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "minItems": 0
       },
       "Subject": {
         "type": "string",
